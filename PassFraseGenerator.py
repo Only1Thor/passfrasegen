@@ -1,4 +1,4 @@
-from random import *
+import random
 
 ordlisteFil = open("ordliste.txt","r")
 
@@ -7,6 +7,4 @@ for word in ordlisteFil:
     alleOrd.append(word)
 
 print("antall ord:" + str(len(alleOrd)))
-print( 
-        alleOrd[ randint( 0, len(alleOrd) -1 ) ] 
-    )
+print(random.choice(alleOrd))
